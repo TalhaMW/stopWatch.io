@@ -41,10 +41,23 @@ playBtn.addEventListener("click",(e)=>{
             hourNum=hourNum+1;
             hours.textContent=hourNum;
         }
-    },1000);
+    },1);
 })
 pauseBtn.addEventListener("click",(e)=>{
     pauseBtn.style="display:none"
     playBtn.style="display:block"
     clearInterval(stopWatch)
+})
+
+reset_Btn.addEventListener('click',()=>{
+    sec.textContent=0;
+    minute.textContent=0;
+    hours.textContent=0;
+    counter=0;
+    minNum=0;
+    hourNum=0;
+    pauseBtn.style="display:none";
+    playBtn.style="display:block";
+    clearInterval(stopWatch);
+
 })
