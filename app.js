@@ -41,7 +41,7 @@ playBtn.addEventListener("click",(e)=>{
             hourNum=hourNum+1;
             hours.textContent=hourNum;
         }
-    },1);
+    },1000);
 })
 pauseBtn.addEventListener("click",(e)=>{
     pauseBtn.style="display:none"
